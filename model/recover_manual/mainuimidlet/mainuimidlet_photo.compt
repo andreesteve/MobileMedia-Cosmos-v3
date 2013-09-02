@@ -3,7 +3,7 @@
   <fenix:Model>
     <versionedItem xsi:type="fenix:ComponentSpecification" description="mainuimidlet_photo" component="/0/@softwareComponent.0" architecturalRole="CONNECTOR">
       <externalProperty xsi:type="fenix:ProvidedInterface">
-        <type href="../photo/interfaces/IMobilePhone.iface#/0/@interfaceType.0"/>
+        <type href="../photo/interfaces/IMobileResources.iface#/0/@interfaceType.0"/>
       </externalProperty>
       <externalProperty xsi:type="fenix:RequiredInterface">
         <type href="interfaces/IMobileResources.iface#/0/@interfaceType.0"/>
