@@ -2,7 +2,7 @@ package br.unicamp.ic.sed.mobilemedia.impl;
 
 
 import br.unicamp.ic.sed.cosmos.*;
-import br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.spec.prov.IMobilePhone;
+import br.unicamp.ic.sed.mobilemedia.impl.mobilephotomgr.spec.prov.IMobilePhone;
 
 class Manager extends AManagerComposite implements IManager {
 
@@ -35,21 +35,21 @@ System.out.println("Starting MobileMediaOO - v1");
 		
 		// create all imanagers
 		br.unicamp.ic.sed.cosmos.IManager filesystem = br.unicamp.ic.sed.mobilemedia.impl.filesystemmgr.impl.ComponentFactory.createInstance();
-		br.unicamp.ic.sed.cosmos.IManager album_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.album_mobilephonemgr.impl.ComponentFactory.createInstance();
-		br.unicamp.ic.sed.cosmos.IManager mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.mobilephonemgr.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager album_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.album_mobilephotomgr.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.mobilephotomgr.impl.ComponentFactory.createInstance();
 				
-		br.unicamp.ic.sed.cosmos.IManager main = br.unicamp.ic.sed.mobilemedia.impl.main.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager main = br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet.impl.ComponentFactory.createInstance();
 				
-		br.unicamp.ic.sed.cosmos.IManager filesystem_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.filesystemmgr_mobilephonemgr.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager filesystem_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.filesystemmgr_mobilephotomgr.impl.ComponentFactory.createInstance();
 		br.unicamp.ic.sed.cosmos.IManager album = br.unicamp.ic.sed.mobilemedia.impl.album.impl.ComponentFactory.createInstance();
 				
 		br.unicamp.ic.sed.cosmos.IManager mainMidlet_album = br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet_album.impl.ComponentFactory.createInstance();
 		br.unicamp.ic.sed.cosmos.IManager photo = br.unicamp.ic.sed.mobilemedia.impl.photo.impl.ComponentFactory.createInstance();
 				
-		br.unicamp.ic.sed.cosmos.IManager photo_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.photo_mobilephonemgr.impl.ComponentFactory.createInstance();
+		br.unicamp.ic.sed.cosmos.IManager photo_mobilePhone = br.unicamp.ic.sed.mobilemedia.impl.photo_mobilephotomgr.impl.ComponentFactory.createInstance();
 		br.unicamp.ic.sed.cosmos.IManager mainMidlet_photo = br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet_photo.impl.ComponentFactory.createInstance();
 		
-		br.unicamp.ic.sed.cosmos.IManager mainmidlet_mobilephone = br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet_mobilephonemgr.impl.ComponentFactory.createInstance();			
+		br.unicamp.ic.sed.cosmos.IManager mainmidlet_mobilephone = br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet_mobilephotomgr.impl.ComponentFactory.createInstance();			
 		
 		/*Setting required interfaces*/
 		

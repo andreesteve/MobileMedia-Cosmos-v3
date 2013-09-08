@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fenix="http://fenix" xmlns:interfaceeditordiagram="http://interfaceeditordiagram">
+  <fenix:Model>
+    <interfaceType identifier="IAlbum">
+      <operation identifier="initAlbumListScreen" returnType="/0/@abstractDataType.0">
+        <parameter identifier="albumNames" type="/0/@abstractDataType.1" typeArrayDimension="1"/>
+      </operation>
+      <operation identifier="initNewAlbumScreen" returnType="/0/@abstractDataType.0"/>
+      <operation identifier="getSelectedAlbum" returnType="/0/@abstractDataType.2"/>
+      <operation identifier="getNewAlbumName" returnType="/0/@abstractDataType.2"/>
+      <operation identifier="initDeleteAlbumScreen" returnType="/0/@abstractDataType.0">
+        <parameter identifier="currentStoreName" type="/0/@abstractDataType.2"/>
+      </operation>
+    </interfaceType>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="void"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="int"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="java.lang.String"/>
+  </fenix:Model>
+  <interfaceeditordiagram:DiagramInt>
+    <interfaceTypeViewInt interfaceType="/0/@interfaceType.0"/>
+  </interfaceeditordiagram:DiagramInt>
+</xmi:XMI>

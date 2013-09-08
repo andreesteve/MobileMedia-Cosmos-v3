@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fenix="http://fenix" xmlns:interfaceeditordiagram="http://interfaceeditordiagram">
+  <fenix:Model>
+    <interfaceType identifier="IImageData">
+      <operation identifier="getRecordId" returnType="/0/@abstractDataType.0"/>
+      <operation identifier="setRecordId" returnType="/0/@abstractDataType.1">
+        <parameter identifier="recordId" type="/0/@abstractDataType.0"/>
+      </operation>
+      <operation identifier="getForeignRecordId" returnType="/0/@abstractDataType.0"/>
+      <operation identifier="setForeignRecordId" returnType="/0/@abstractDataType.1">
+        <parameter identifier="foreignRecordId" type="/0/@abstractDataType.0"/>
+      </operation>
+      <operation identifier="getImageLabel" returnType="/0/@abstractDataType.2"/>
+      <operation identifier="setImageLabel" returnType="/0/@abstractDataType.1">
+        <parameter identifier="imageLabel" type="/0/@abstractDataType.2"/>
+      </operation>
+      <operation identifier="getParentAlbumName" returnType="/0/@abstractDataType.2"/>
+      <operation identifier="setParentAlbumName" returnType="/0/@abstractDataType.1">
+        <parameter identifier="parentAlbumName" type="/0/@abstractDataType.2"/>
+      </operation>
+      <operation identifier="toggleFavorite" returnType="/0/@abstractDataType.1"/>
+      <operation identifier="setFavorite" returnType="/0/@abstractDataType.1">
+        <parameter identifier="favorite" type="/0/@abstractDataType.3"/>
+      </operation>
+      <operation identifier="isFavorite" returnType="/0/@abstractDataType.3"/>
+      <operation identifier="increaseNumberOfViews" returnType="/0/@abstractDataType.1"/>
+      <operation identifier="getNumberOfViews" returnType="/0/@abstractDataType.0"/>
+      <operation identifier="setNumberOfViews" returnType="/0/@abstractDataType.1">
+        <parameter identifier="views" type="/0/@abstractDataType.0"/>
+      </operation>
+    </interfaceType>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="int"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="void"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="java.lang.String"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="boolean"/>
+  </fenix:Model>
+  <interfaceeditordiagram:DiagramInt>
+    <interfaceTypeViewInt interfaceType="/0/@interfaceType.0"/>
+  </interfaceeditordiagram:DiagramInt>
+</xmi:XMI>

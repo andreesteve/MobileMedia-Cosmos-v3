@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fenix="http://fenix" xmlns:interfaceeditordiagram="http://interfaceeditordiagram">
+  <fenix:Model>
+    <interfaceType identifier="IFilesystemCtr">
+      <operation identifier="addNewPhotoToAlbum" returnType="/0/@abstractDataType.0">
+        <parameter identifier="imageName" type="/0/@abstractDataType.1"/>
+        <parameter identifier="imagePath" order="1" type="/0/@abstractDataType.1"/>
+        <parameter identifier="albumName" order="2" type="/0/@abstractDataType.1"/>
+      </operation>
+      <operation identifier="deleteImage" returnType="/0/@abstractDataType.0">
+        <parameter identifier="imageName" type="/0/@abstractDataType.1"/>
+        <parameter identifier="albumName" order="1" type="/0/@abstractDataType.1"/>
+      </operation>
+      <operation identifier="getImageFromRecordStore" returnType="/0/@abstractDataType.2">
+        <parameter identifier="albumName" type="/0/@abstractDataType.1"/>
+        <parameter identifier="imageName" order="1" type="/0/@abstractDataType.1"/>
+      </operation>
+      <operation identifier="getAlbumNames" returnType="/0/@abstractDataType.3" returnArrayDimension="1"/>
+      <operation identifier="resetImageData" returnType="/0/@abstractDataType.0"/>
+      <operation identifier="createNewPhotoAlbum" returnType="/0/@abstractDataType.0">
+        <parameter identifier="albumName" type="/0/@abstractDataType.1"/>
+      </operation>
+      <operation identifier="deletePhotoAlbum" returnType="/0/@abstractDataType.0">
+        <parameter identifier="albumName" type="/0/@abstractDataType.1"/>
+      </operation>
+      <operation identifier="getImageInfo" returnType="/0/@abstractDataType.4">
+        <parameter identifier="imageName" type="/0/@abstractDataType.1"/>
+      </operation>
+      <operation identifier="updateImageInfo" returnType="/0/@abstractDataType.0">
+        <parameter identifier="velhoID" type="/0/@abstractDataType.4"/>
+        <parameter identifier="novoID" order="1" type="/0/@abstractDataType.4"/>
+      </operation>
+      <operation identifier="getImages" returnType="/0/@abstractDataType.3" returnArrayDimension="1">
+        <parameter identifier="albumName" type="/0/@abstractDataType.1"/>
+      </operation>
+    </interfaceType>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="void"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="java.lang.String"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="javax.microedition.lcdui.Image"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="int"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="br.unicamp.ic.sed.mobilemedia.impl.mobilephotomgr.impl.mobilephonecontroller.spec.dt.ImageData"/>
+  </fenix:Model>
+  <interfaceeditordiagram:DiagramInt>
+    <interfaceTypeViewInt interfaceType="/0/@interfaceType.0"/>
+  </interfaceeditordiagram:DiagramInt>
+</xmi:XMI>

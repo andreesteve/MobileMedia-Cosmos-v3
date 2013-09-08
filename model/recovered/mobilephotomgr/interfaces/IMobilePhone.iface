@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fenix="http://fenix" xmlns:interfaceeditordiagram="http://interfaceeditordiagram">
+  <fenix:Model>
+    <interfaceType identifier="IMobilePhone">
+      <operation identifier="postCommand" returnType="/0/@abstractDataType.0">
+        <parameter identifier="comand" type="/0/@abstractDataType.1"/>
+      </operation>
+      <operation identifier="startUp" returnType="/0/@abstractDataType.0"/>
+    </interfaceType>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="void"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="javax.microedition.lcdui.Command"/>
+  </fenix:Model>
+  <interfaceeditordiagram:DiagramInt>
+    <interfaceTypeViewInt interfaceType="/0/@interfaceType.0"/>
+  </interfaceeditordiagram:DiagramInt>
+</xmi:XMI>

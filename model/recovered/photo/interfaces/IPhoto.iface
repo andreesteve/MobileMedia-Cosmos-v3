@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:fenix="http://fenix" xmlns:interfaceeditordiagram="http://interfaceeditordiagram">
+  <fenix:Model>
+    <interfaceType identifier="IPhoto">
+      <operation identifier="getAddedPhotoName" returnType="/0/@abstractDataType.0"/>
+      <operation identifier="getAddedPhotoPath" returnType="/0/@abstractDataType.0"/>
+      <operation identifier="getNewLabel" returnType="/0/@abstractDataType.0"/>
+      <operation identifier="getSelectedPhoto" returnType="/0/@abstractDataType.0"/>
+      <operation identifier="initAddPhotoToAlbum" returnType="/0/@abstractDataType.1">
+        <parameter identifier="albumName" type="/0/@abstractDataType.0"/>
+      </operation>
+      <operation identifier="initEditLabelScreen" returnType="/0/@abstractDataType.1"/>
+      <operation identifier="initPhotoListScreen" returnType="/0/@abstractDataType.1">
+        <parameter identifier="imageNames" type="/0/@abstractDataType.2" typeArrayDimension="1"/>
+      </operation>
+      <operation identifier="initPhotoViewScreen" returnType="/0/@abstractDataType.1">
+        <parameter identifier="image" type="/0/@abstractDataType.3"/>
+      </operation>
+    </interfaceType>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="java.lang.String"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="void"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="int"/>
+    <abstractDataType xsi:type="fenix:NativeType" identifier="javax.microedition.lcdui.Image"/>
+  </fenix:Model>
+  <interfaceeditordiagram:DiagramInt>
+    <interfaceTypeViewInt interfaceType="/0/@interfaceType.0"/>
+  </interfaceeditordiagram:DiagramInt>
+</xmi:XMI>

@@ -2,7 +2,7 @@ package br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet_photo.impl;
 
 import java.util.*;
 
-import br.unicamp.ic.sed.mobilemedia.impl.main.spec.prov.IMobileResources;
+import br.unicamp.ic.sed.mobilemedia.impl.mainuimidlet.spec.prov.IMobileResources;
 
 class Manager extends br.unicamp.ic.sed.cosmos.AManager{
 
